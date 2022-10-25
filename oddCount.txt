@@ -1,0 +1,7 @@
+Какое количество нечетных чисел находится в диапазоне от 0 до n
+Мое решение
+function oddCount(n){
+  return Math.floor(n/2);
+}
+Другие решения
+const oddCount = n => Math.floor(n/2) ;
