@@ -1,0 +1,9 @@
+Преобразовать входящую строку к верхнему регистру
+Мое решение
+function makeUpperCase(str) {
+  let upper =  str.toUpperCase()
+  return upper;
+}
+Другие решения
+const makeUpperCase = str => str.toUpperCase();
+function makeUpperCase(str) {return str.toUpperCase();}
