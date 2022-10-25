@@ -1,0 +1,7 @@
+Увеличить число вдвое и вернуть его
+Мое решение
+function doubleInteger(i) {  
+  return i * 2;
+}
+Другие решения
+const doubleInteger = i => 2 * i;
