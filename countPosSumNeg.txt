@@ -1,0 +1,28 @@
+Количество положительных и сумма отрицательных чисел из заданного массива
+Мое решение
+function countPositivesSumNegatives(input) {
+  if (input == 0 || input == null) {
+    return [];
+  }
+  let arr = [0, 0];
+  for (let i=0; i < input.length; i++){
+    if (input[i] > 0) {
+      arr[0]++;
+    } else if (input[i] < 0) {
+      arr[1] += input[i];
+    }
+  }  
+  return arr;
+}
+Другие решения
+function countPositivesSumNegatives(input) {
+    return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+}
+
+function countPositivesSumNegatives(input) {
+  if (!input || input.length == 0) return [];
+  var sum = 0, count = 0;
+  input.forEach(function(el){ if (el > 0) count++; else sum+=el});
+  return [count, sum];
+}
+
