@@ -1,0 +1,20 @@
+Написать функцию для расчета объема параллелепипеда, если даны длина, ширина и высота.
+Мое решение
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
+
+Другие решения
+
+const Kata = {
+  getVolumeOfCuboid : (length, width, height) => length * width * height
+}
+
+var Kata = (() => {
+  this.getVolumeOfCuboid = (l, w, h) => l * w * h;
+  return this;
+})();
+
