@@ -1,0 +1,17 @@
+Представление массива в виде строки с разделителем
+Мое решение
+
+const toCsvText = array => array.join('\n');
+
+Другие решения
+До рефакторинга мое решение было таким
+
+function toCsvText(array) {
+   return array.join('\n');
+}
+
+function toCsvText(array) {
+   return array.map(list => list.join(',')).join('\n')
+}
+
+
