@@ -1,0 +1,15 @@
+Написать функцию, которая увеличит каждый элемент массива в 2 раза
+Мое решение
+
+const maps = x => x.map((num) => num * 2);
+
+Другие решения
+
+function maps(x){
+//return x.map(el => el * 2);
+let arr = [];
+for(let i = 0; i < x.length; i++){
+arr.push(x[i] * 2);
+}
+return arr;
+}
