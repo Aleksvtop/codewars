@@ -1,0 +1,13 @@
+Написать функцию, которая переводит км/ч в см/с с округлением до целого значения вниз
+Мое решение
+
+const cockroachSpeed = (s) => Math.floor(s * 100000 / 3600)
+
+Другие решения
+
+function cockroachSpeed(s) {
+  //multiply km/m by 27.7777777778
+  return Math.floor(s*27.7777777778);
+}
+
+const cockroachSpeed = s => s/.036|0
