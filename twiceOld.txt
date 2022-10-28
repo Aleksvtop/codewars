@@ -1,0 +1,17 @@
+Рассчитать в каком через сколько лет (в прошлом или будущем) возраст отца будет в 2 раза больше возраста сына
+Мое решение
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let twiceOld = 2 * sonYearsOld;
+  return twiceOld > dadYearsOld ? twiceOld - dadYearsOld : dadYearsOld - twiceOld;
+}
+
+Другие решения
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+function twiceAsOld(a, b) {
+  return a>2*b ? a-2*b : 2*b-a;
+}
