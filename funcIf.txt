@@ -1,0 +1,14 @@
+Написать функцию с 3 параметрами, которая вызывает функцию 1, если bool истина и функцию 2, если ложь
+Мое решение
+ 
+function _if(bool, func1, func2) {
+  return bool ? func1() : func2();
+}
+
+Другие решения
+
+const _if = (bool, func1, func2) => bool ? func1() : func2();
+
+function _if(bool, func1, func2) {
+  if (bool) { func1(); }
+  else { func2(); }
