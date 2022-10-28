@@ -1,0 +1,29 @@
+Найти среднее арифметическое элементов массива методом объекта
+Мое решение
+
+var Calculator = {
+ average: function(...args) {
+  if (args.length == 0) return 0;
+  return args.reduce((a, b) => a + b)/args.length;
+ }
+};
+
+Другие решения
+
+var Calculator = {
+ average: function(...args) {
+    return args.length==0?0:args.reduce((a,b)=>b+a)/args.length
+ }
+};
+
+var Calculator = {
+ average: function() {
+   var average = 0;
+   for (var i = 0; i < arguments.length; i++) {
+     average += arguments[i];
+   }
+   average = average / Math.max(arguments.length, 1);
+   return average;
+ }
+};
+
