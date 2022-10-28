@@ -1,0 +1,39 @@
+Создать функцию, которая на входе принимает базовую математическую операцию, 2 числа и возвращает результат операции с этими числами
+Мое решение
+
+function basicOp(operation, value1, value2)
+{
+  switch(operation) {
+      case '+':
+        return value1 + value2;
+        break;
+      case '-':
+        return value1 - value2;
+        break;
+      case '*':
+        return value1 * value2;
+        break;
+      case '/':
+        return value1 / value2;
+        break;
+  }
+}
+
+Другие решения
+
+function basicOp(operation, value1, value2)
+{
+  // Code
+  if( operation == "+") {
+    return value1 + value2
+  }
+  if( operation == "-") {
+    return value1 - value2
+  }
+  if( operation == "*") {
+    return value1 * value2
+  }
+  if( operation == "/") {
+    return value1 / value2
+  }
+}
