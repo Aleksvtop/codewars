@@ -1,0 +1,23 @@
+Найти остаток от деления большего из заданных чисел на меньшее
+Мое решение
+
+function remainder(n, m) {
+  if ((n > m && m == 0) || (m > n && n == 0)) {
+    return NaN
+  }
+  return n > m ? n % m : m % n;
+} 
+
+Другие решения
+
+function remainder(a, b){
+  // Divide the larger argument by the smaller argument and return the remainder
+  var min = Math.min(a,b);
+  var max = Math.max(a,b);
+
+  return min ? max % min : NaN;
+}
+
+function remainder(a, b){  
+  return Math.max(a,b) % (Math.min(a,b) || NaN);
+}
