@@ -1,0 +1,12 @@
+Дано число. Вернуть число, если оно отрицательное или число со знаком "-", если оно положительное
+Мое решение
+
+const makeNegative = num => num > 0 ? -num : num;
+
+Другие решения
+
+makeNegative = n => -Math.abs(n)
+
+function makeNegative(num) {
+  return Math.abs(num) * -1;
+}
