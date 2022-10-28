@@ -1,0 +1,18 @@
+Достаточно ли места для пассажиров
+Мое решение (попробовал сделать с помощью стрелочной функции и тернарного оператора)
+
+const enough = (cap, on, wait) => on + wait > cap ? on + wait - cap : 0; 
+
+Другие решения
+
+function enough(cap, on, wait) {
+  return (on+wait > cap) ? on+wait-cap : 0;
+}
+
+function enough(cap, on, wait) {
+  if (on + wait < cap){
+  return 0;
+  } else {
+  return (on + wait) - cap;
+  }
+}
