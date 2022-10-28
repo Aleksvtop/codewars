@@ -1,0 +1,12 @@
+Написать функцию, которая определяет находится ли элемент в массиве, не используя цикл
+Мое решение
+
+unction include(arr, item){
+  return arr.includes(item);
+}
+
+Другие решения
+
+function include(arr, item) {
+  return arr.indexOf(item) !== -1;
+}
