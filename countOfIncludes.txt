@@ -1,0 +1,13 @@
+Написать функцию, которая определяет находится ли элемент в массиве и вернуть количество таких элементов
+Мое решение
+
+function include(arr, item) {
+  return arr.indexOf(item) !== -1;
+}
+
+Другие решения
+
+unction strCount(str, letter){  
+  return str.split(letter).length-1
+}
+
