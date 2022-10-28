@@ -1,0 +1,28 @@
+На вход подается цвет светофора. Вернуть следующий цвет в зависимости от текущего: зеленый->желтый->красный->зеленый
+Мое решение
+
+function updateLight(current) {
+  switch(current) {
+    case 'green':
+      return 'yellow';
+      break;
+    case 'yellow':
+      return 'red';
+      break;
+    case 'red':
+      return 'green';
+      break;
+  }
+}
+
+Другие решения
+
+function updateLight(current) {  
+  return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+}
+
+const updateLight = current => ({
+  green: 'yellow',
+  yellow: 'red',
+  red: 'green',
+})[current]
