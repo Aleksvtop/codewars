@@ -1,0 +1,28 @@
+Написать функцию, которая подсчитывает количество true в массиве и возвращает это количество
+Мое решение
+
+unction countSheeps(arrayOfSheep) {
+  let sum = 0;
+  for(let i = 0; i < arrayOfSheep.length; i++){
+    if (arrayOfSheep[i]) sum ++;
+  }
+  return sum;
+
+Другие решения
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+function countSheeps(arrayOfSheep) {
+  var count = 0;
+  
+  arrayOfSheep.forEach( function (sheep) {
+    if (sheep)
+      count++;
+  });
+  
+  return count;
+}
+
+let countSheeps = x => x.filter( s => s ).length;
