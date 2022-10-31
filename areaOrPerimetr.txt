@@ -1,0 +1,22 @@
+Написать функцию, которая при заданных длине и ширине возвращает площадь четырехугольника, если длина и ширина равны и периметр, если они не равны
+Мое решение
+
+const areaOrPerimeter = (l , w) => l == w ? l * w : 2 * l + 2 * w;
+
+Другие решения
+
+const areaOrPerimeter = function(l , w) {
+  let area = l * w;
+  let perimeter = (l + w) * 2;
+  
+  return l === w ? area : perimeter;
+};
+
+const areaOrPerimeter = function(l , w) {
+  if (w == l) {
+    return w * l;
+  }
+    else {
+      return 2*l+2*w;
+    }
+};
