@@ -1,0 +1,20 @@
+Написать функцию, которая из объекта берет ключ и значение и, если ключ или значение = 5, то заносит их в массив
+Мое решение
+
+function giveMeFive(obj){
+  const myArr = [];
+  for (var el in obj) {
+    if (el.length == 5) {
+      myArr.push(el);
+    }  
+    if (obj[el].length == 5) {
+      myArr.push(obj[el]);
+    }
+  }
+  return myArr;
+}
+
+Другие решения
+
+const giveMeFive = obj =>
+  [].concat(...Object.entries(obj, `for( in `)).filter(val => val.length === 5);
