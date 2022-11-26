@@ -1,0 +1,15 @@
+Создать функцию, которая будет инвертировать элементы массива
+
+Мое решение
+const invert = array => array.map(el => -el) 
+
+Другие решения
+
+function invert(array) {
+  var newArr = [];
+  for(var i = 0; i < array.length; i++){
+    newArr.push(-array[i]);
+  }
+   return newArr;
+}
+
