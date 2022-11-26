@@ -1,0 +1,27 @@
+Создать функцию, которая будет находить минимальное и максимальное значения в массиве чисел
+
+Мое решение (при передаче массива в качестве параметра необходимо использовать метод
+apply или spred (...)
+const min = list => Math.min(...list);
+
+const max = list => Math.max(...list); 
+
+Другие решения
+
+var min = function(list){
+    list.sort((a, b) => (a - b));
+    return list[0];
+}
+
+var max = function(list){
+    list.sort((a, b) => (b - a));
+    return list[0];
+}
+
+var min = function(list){
+    return Math.min.apply(null,list);
+}
+
+var max = function(list){
+    return Math.max.apply(null,list);
+}
