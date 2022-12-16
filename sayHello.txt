@@ -1,0 +1,9 @@
+Написать функцию, которая будет выдавать приветствие
+Мое решение
+
+const sayHello = name => 'Hello, ' + name
+
+Другие решения
+
+const sayHello = name => `Hello, ${name}`;
+
