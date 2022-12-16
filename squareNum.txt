@@ -1,0 +1,14 @@
+Написать функцию, которая будет принимать число и возводить его в квадрат
+Мое решение
+
+const square = num => num*num
+
+Другие решения
+
+function square(num){
+  var num = Math.pow(num, 2);
+  return num;
+};
+
+
+const square = x => x ** 2;
