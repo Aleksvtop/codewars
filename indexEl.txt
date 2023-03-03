@@ -1,0 +1,10 @@
+Дана функция, которая ищет элемент в массиве и, если находит, то возвращает индекс этого элемента
+Надо переписать функцию, чтобы она была длиной не более 85 символов
+Мое решение (делал с тернарником, но из-за фигурных скобок решение не проходило)
+const find =(array, el) => {if (array.includes(el)) return array.indexOf(el) 
+return "Not found"}
+Допилил решение
+let find = (a, e) => a.indexOf(e) != -1 ? a.indexOf(e) : "Not found"
+
+Другие решения
+var find = (a, e) => a.includes(e) ? a.indexOf(e) : "Not found";
