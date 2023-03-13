@@ -1,0 +1,18 @@
+Написать функцию, которая будет принимать число и умножать его на 8, если оно нечетное и на 9,
+если четное
+
+Мое решение:
+const simpleMultiplication = num => num % 2 == 0 ? num * 8 : num * 9
+
+Другие решения:
+function simpleMultiplication(value){
+    
+    if(value%2===0 ){
+     return value *8
+    }
+    else{
+    return value* 9;
+    }    
+}
+
+const simpleMultiplication=n=>n*(n%2?9:8)
