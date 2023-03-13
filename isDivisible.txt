@@ -1,0 +1,14 @@
+Написать функцию, которая будет принимать 3 числа и возвращать true, если первое число делится на второе и третье без 
+остатка или false, если не делится без остатка
+
+Мое решение:
+const isDivisible = (n, x, y) => (n%x == 0 && n%y == 0) 
+
+Другие решения:
+function isDivisible(n, ...dividers) {
+  return dividers.every(divider => n % divider == 0)
+}
+
+function isDivisible(n, x, y) {
+  return (Number.isInteger(n / x) && Number.isInteger(n / y));
+}
