@@ -1,0 +1,17 @@
+Написать функцию, которая будет принимать строку и возвращать значения элементов строки с добавлением 
+длины элемента
+
+Мое решение:
+const addLength = str => str.split(' ').map(el => `${el} ${el.length}`)
+
+Другие решения:
+function addLength(str) {
+  var split = str.split(" ");
+  var result = [];
+   
+  for (i = 0; i < split.length; ++i) {
+    result.push(split[i] + " " + split[i].length);
+  } 
+  return result;  
+}
+
