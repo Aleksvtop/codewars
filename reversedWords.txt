@@ -1,0 +1,15 @@
+Написать функцию, которая будет принимать строку и возвращать ее с обратным порядком слов
+
+Мое решение:
+const reverseWords = str => str.split(' ').reverse().join(' ')
+
+Другие решения:
+function reverseWords(str){
+  var reverse = [];
+  var words = str.split(" ");
+  for(let i=words.length-1; i>=0; i--){
+    reverse.push(words[i]);
+    
+  }
+  return reverse.join(" ")
+}
