@@ -1,0 +1,17 @@
+Написать функцию, которая будет принимать количество манго и цену. Найти цену за все манго,
+если каждый 3-й фрукт бесплатный
+
+Мое решение:
+const mango = (q, p) => (q - Math.floor(q/3)) * p
+
+Другие решения:
+function mango(quantity, price){
+  let result = 0
+  for (let i = 1; i <= quantity; i++) {
+    if (i % 3) {
+      result += price
+    }
+  }
+  return result
+}
+
