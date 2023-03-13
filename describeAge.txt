@@ -1,0 +1,12 @@
+Написать функцию, которая в зависимости от возраста выводит сообщение (должна быть не более 137 символов)
+
+Мое решение:
+let describeAge=(a)=>(a<= 12)?"You're a(n) kid":(a>=13&&a<= 17)?"You're a(n) teenager":(a>=18&&a<= 64)?"You're a(n) adult":"You're a(n) elderly"
+
+Другие решения:
+
+function describeAge(age) {
+  return "You're a(n) " + (age < 13 ? "kid" : age < 18 ? "teenager" : age < 65 ? "adult" : "elderly")
+}
+
+var describeAge=a=>`You're a(n) ${a<13?"kid":a<18?"teenager":a<65?"adult":"elderly"}`;
